@@ -1,6 +1,6 @@
-restart: always
 concourse-web:
   image: meteogroup/concourse-ci
+  restart: always
   entrypoint: /concourse-web.sh
   environment:
     CONCOURSE_URL:
@@ -20,6 +20,7 @@ concourse-web:
 
 concourse-worker:
   image: meteogroup/concourse-ci
+  restart: always
   entrypoint: /concourse-worker.sh
   privileged: true
   environment:
