@@ -1,3 +1,4 @@
+restart: always
 concourse-web:
   image: meteogroup/concourse-ci
   entrypoint: /concourse-web.sh
